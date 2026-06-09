@@ -7,10 +7,10 @@ import dio.taskmanager.domain.exceptions.TaskNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GetByIdUseCase {
+public class GetTaskByIdUseCase {
     private final TaskRepository repository;
 
-    public GetByIdUseCase(TaskRepository repository) {
+    public GetTaskByIdUseCase(TaskRepository repository) {
         this.repository = repository;
     }
     public TaskOutput execute(TaskId id){
